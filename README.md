@@ -1,13 +1,3 @@
-Phase 2 Implementation Summary (Batch Stock ML)
-I implemented a minimal, dockerized batch data pipeline for stock-market ML preprocessing. The stack includes Apache Airflow for orchestration and PostgreSQL for storage. An ingestion script periodically loads OHLCV data (demo dataset) into a raw_stocks table. A transformation step computes simple yet informative features—such as a 3-day moving average and a 1-day return—and writes them to a curated features table for downstream model training. The Airflow DAG (batch_stock_pipeline) defines dependencies (ingest → transform) with a daily schedule and no catch-up, demonstrating basic reliability via task isolation and reproducible execution. The repository includes a docker-compose.yml that starts Airflow and Postgres, a lightweight README with steps to run the pipeline locally, and two scripts (ingest.py, transform.py) that encapsulate ETL logic. While this prototype focuses on a small dataset and pandas for simplicity, the modular design allows straightforward extension to distributed processing (e.g., Apache Spark), data quality checks, and additional features (volatility, rolling z-scores). This Phase 2 submission establishes the core implementation path from the Phase 1 design and prepares the groundwork for Phase 3 enhancements and evaluation.
-user:admin
-pass:admin
-
-phase 3:
-Perfect — let’s shape this into a **Phase 3 “Results & Evaluation” section** you can drop into your final report (about 1.5–2 pages with screenshots/tables). It uses your **real numbers** and adds the academic-style narrative.
-
----
-
 # 📑 Results and Evaluation
 
 ### Data Processing Outcomes
