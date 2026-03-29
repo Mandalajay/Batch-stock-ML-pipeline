@@ -134,12 +134,20 @@ To complement batch:
 - **Sinks**: Exactly-once to `features_gold_rt` (Postgres/lakehouse)
 - **Ops**: Airflow triggers/monitors jobs, reconciliation tasks compare batch vs streaming
 
----
-
-## Submission Deliverables
-
-- **Abstract (2 pages, PDF)**: included in `/docs/abstract.pdf`
-- **50-word PebblePad summary**:
-
-  > Batch pipeline for stock OHLCV using Airflow + Postgres with Bronze/Silver/Gold layers. Ingests large CSV and yfinance API, enforces idempotent upserts and data-quality checks, and computes MA/volume/returns features. Reproducible with Docker Compose. Designed to extend with Kafka + Spark/Flink for near real-time analytics.
+batch-stock-ml-pipeline/
+│
+├── airflow/
+│   ├── dags/
+│   ├── scripts/
+│
+├── sql/
+│   ├── bronze.sql
+│   ├── silver.sql
+│   ├── gold.sql
+│
+├── landing/
+│   └── files/
+│
+├── docker-compose.yml
+├── README.md
 
