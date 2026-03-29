@@ -1,0 +1,6 @@
+pandas
+SQLAlchemy
+psycopg2-binary
+great_expectations
+yfinance
+requests

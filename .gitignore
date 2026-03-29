@@ -1,0 +1,57 @@
+.DS_Store
+.idea/
+.vscode/
+
+# Python
+_pycache_/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.eggs/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Logs and runtime files
+*.log
+logs/
+tmp/
+*.pid
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Airflow runtime artifacts
+airflow/logs/
+airflow/airflow-webserver.pid
+airflow/airflow-scheduler.pid
+airflow/standalone_admin_password.txt
+
+# Local data / generated files
+landing/files/*.csv
+landing/files/*.parquet
+data/
+output/
+artifacts/
+
+# Build / distribution
+build/
+dist/
