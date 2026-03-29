@@ -125,3 +125,7 @@ batch-stock-ml-pipeline/
 ├── README.md
 ```
 
+##Prerequisites
+Docker
+Docker Compose
+(Optional) Python 3.11+
