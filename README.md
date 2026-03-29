@@ -41,10 +41,13 @@ This is a data-intensive pipeline (heterogeneous sources, transformations, ≥1M
 
 ## Setup
 
-### Requirements
+## Prerequisites
 
-- Docker & Docker Compose
-- Python 3.11+ (if running scripts locally)
+- Docker
+- Docker Compose
+- (Optional) Python 3.11+ (for local script execution)
+
+## Setup
 
 ### Start
 
@@ -124,8 +127,3 @@ batch-stock-ml-pipeline/
 ├── docker-compose.yml
 ├── README.md
 ```
-
-##Prerequisites
-Docker
-Docker Compose
-(Optional) Python 3.11+
